@@ -1,0 +1,10 @@
+- name: Hello World Sample
+  hosts: all
+  tasks:
+    - name: Pause 2 minutes
+      pause:
+        minutes: 2
+
+    - name: Hello Message
+      debug:
+        msg: "Hello World!"
