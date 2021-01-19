@@ -1,0 +1,10 @@
+- name: Increased the timeout
+  hosts: all
+  tasks:
+    - name: Pause 5 seconds
+      pause:
+        seconds: 5
+
+    - name: Increased the timeout
+      debug:
+        msg: "Increased the timeout..."

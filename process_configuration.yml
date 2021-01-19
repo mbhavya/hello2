@@ -1,0 +1,10 @@
+- name: New Configuration Message
+  hosts: all
+  tasks:
+    - name: Pause 10 seconds
+      pause:
+        seconds: 10
+
+    - name: Dump create new configuration message
+      debug:
+        msg: "Created new configuration..."
